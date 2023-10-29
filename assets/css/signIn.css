@@ -1,89 +1,89 @@
-@import url("global.css");
+.login {
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 100px;
+    margin-top: 150px;
+    text-align: left;
+    padding: 20px;
+}
 
 body {
-  background-image: url("../images/background-movies-series.png");
-  background-size: cover;
-  height: 100vh;
+    background-color: var(--primary-color);
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Quicksand", cursive;
-  width: 100%;
-  height: 70%;
-  padding: 24px;
+.login h3 {
+    font-family: 'QuickSand';
+    text-transform: uppercase;
+    font-size: 2rem;
+    top: 20px;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
-.menu {
-  position: relative;
+.login p {
+    font-family: 'QuickSand';
+    font-weight: 100;
+    align-self: left;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 40px;  
+
 }
 
-.login {
-  width: 100%;
-  max-width: 800px;
-  background-color: var(--form-bg-color);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 40px;
+.login input {
+    width: 95%;
+    background-color: rgba(17, 15, 15, 0.3);
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 10px;
+    height: 60px;
+    font-family: 'QuickSand';
+    color: aliceblue;
+    font-size: 1rem;
+    padding-left: 10px;
+    text-align: left;
+}
+#btnr {
+    width: max-content;
+    padding: 20px 60px;
+    height: max-content;
+    background-image: var(--divider-bg-color);
+    border-radius: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    border: 1px solid transparent;
+    margin-top: 40px;
 }
 
-.login__title {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  margin-bottom: 24px;
+#btnr:hover{
+    border: 1px solid rgb(255, 0, 212);
+    background: transparent;
+    color: rgb(255, 0, 212);
+    transition: 1s;
+    cursor: pointer;
+}
+input:valid {
+    border: 1px solid green;
+    color: rgb(0, 255, 64);
 }
 
-.login__label {
-  text-align: left;
+input:invalid {
+    border: 1px soid red;
+    color: red;
 }
 
-.login__field {
-  background: var(--form-field-bg-color);
-  border: var(--form-field-border);
-  border-radius: 8px;
-  color: var(--text-color);
-  padding: 16px;
-  font-size: 1rem;
-}
-
-.login__field::placeholder {
-  color: var(--form-field-placeholder);
-}
-
-.login__field:invalid {
-  border-color: var(--form-field-error);
-}
-
-.login__actions {
-  margin-top: 24px;
-  text-align: left;
-}
-
-.login__link {
-  color: var(--link-color);
-  text-decoration: none;
-  margin-left: 24px;
-  font-weight: bold;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 480px) {
-  body {
-    height: auto;
-  }
-
-  .login__actions .button {
-    display: block;
-    margin-bottom: 24px;
-  }
-
-  .login__link {
-    margin: 0;
-  }
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-family: "QuickSand";
+    text-align: center;
 }
