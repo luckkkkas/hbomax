@@ -89,6 +89,7 @@ main {
     background: transparent;
     color: rgb(255, 0, 212);
     transition: 1s;
+    cursor: pointer;
 }
   
 .divmenorainda p {
@@ -96,7 +97,7 @@ main {
     font-family: 'Raleway';
     text-transform: initial;
     font-weight: 100;
-  }
+}
   
 .separador {
     width: 100%;
@@ -189,13 +190,17 @@ section article li::marker {
     justify-self: flex-end;
 }
 
+.card__bt:hover{
+    cursor: pointer;
+}
+
 .body__2:has(.card__1:hover) .card__2{
-    transform: rotateY(-45deg);
+    transform: rotateY(-45deg) rotateX(5deg);
     transition: 2s;
 }
 
 .body__2:has(.card__2:hover) .card__1 {
-    transform: rotateY(45deg);
+    transform: rotateY(45deg) rotateX(5deg);
     transition: 2s;
 }
 
@@ -240,41 +245,48 @@ section article li::marker {
     transition: transform 0.8s, 0.8s, border 1s;
 }
 
-.boddy__3 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    transition: opacity 2s;
-}
-
-.card__content:hover {
-    transform: scale(1.05);
-    border: 2px solid var(--tertiary-color);
-}
-
 .card__content:hover {
     transform: scale(1.05);
     border: 2px solid #ff00e5;
     border-radius: 16px;
 }
 
-.card__content :hover .card__img {
+.card__content:hover #card__img {
     opacity: 0;
 }
 
-.card__img {
+#card__img {
     width: 100%;
+    height: 100%;
+    border-radius: 16px;
     object-fit: cover;
     object-position: center;
-    transition: opacity 2s;
+    transition: 2s;
+    opacity: 1;
 }
 
-.card__content:hover {
+.card__content:nth-child(1):hover {
     background-image: url("../images/hbo-hover_0.webp");
 }
 
 .card__content:nth-child(2):hover {
     background-image: url("../images/MAX-Hover.webp");
+}
+
+.card__content:nth-child(3):hover {
+    background-image: url("../images/DC-Hover.webp");
+}
+
+.card__content:nth-child(4):hover {
+    background-image: url("../images/MAX-Hover.webp");
+}
+
+.card__content:nth-child(5):hover {
+    background-image: url("../images/CN-Hover.png");
+}
+
+.card__content:nth-child(6):hover {
+    background-image: url("../images/UCL-Hover.webp");
 }
 
 

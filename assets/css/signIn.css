@@ -40,7 +40,7 @@ body {
 .login input {
     width: 95%;
     background-color: rgba(17, 15, 15, 0.3);
-    border: 1px solid white;
+    border: 1px solid gray;
     margin: 10px;
     border-radius: 10px;
     height: 60px;
@@ -71,8 +71,9 @@ body {
     transition: 1s;
     cursor: pointer;
 }
+
 input:valid {
-    border: 1px solid green;
+    border: 1px solid rgb(0, 255, 0);
     color: rgb(0, 255, 64);
 }
 

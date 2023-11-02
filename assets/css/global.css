@@ -55,6 +55,10 @@ header button{
   letter-spacing: 2px;
 }
 
+header button:hover {
+  cursor: pointer;
+}
+
 #bt__01 {
   background-color: transparent;
   border: none;
